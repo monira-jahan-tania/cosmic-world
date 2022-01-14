@@ -20,6 +20,9 @@ header{
     background-color: rgba(0,0,0,0.6);
     background-blend-mode: overlay;
 }
+
+/*--------common----- 
+-------------------*/
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -28,6 +31,36 @@ header{
 .high-lighter{
     color:  var(---primary-color);
 }
+.parimary-button{
+    background-image: linear-gradient(90deg, #e43897, #ff008e);
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 7px 0 #420024;
+    position: relative;
+    top: 0;
+}
+.parimary-button:active{
+    top: 5px;
+    box-shadow: 0 2px 0 #5c2d47;
+}
+.section-title{
+    text-align: center;
+}
+.section-title h2{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 40px;
+    border-bottom: 3px solid var(---primary-color);
+    margin: 50px 0;
+}
+
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -69,24 +102,7 @@ nav{
     line-height: 1.5;
     margin: 20px 0;
 }
-.parimary-button{
-    background-image: linear-gradient(90deg, #e43897, #ff008e);
-    color: #fff;
-    font-size: 18px;
-    text-transform: uppercase;
-    outline: 0;
-    border: 0;
-    padding: 15px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 7px 0 #420024;
-    position: relative;
-    top: 0;
-}
-.parimary-button:active{
-    top: 5px;
-    box-shadow: 0 2px 0 #5c2d47;
-}
+
 .banner-right{
     display: flex;
     justify-content: center;
@@ -94,4 +110,39 @@ nav{
 }
 .banner-right img{
     width: 100%;
+}
+
+/*======= feature part====
+====================== */
+.feature-cards{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+.card{
+    width: 300px;
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: 0 30px 35px rgba(0,0,0,0.2);
+}
+.card .icon{
+    background-color: var(---primary-color);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    color: #fff;
+}
+.card h3{
+    color: var(---primary-color);
+    font-size: 25px;
+}
+.card p{
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.card a{
+    color: var(---primary-color);
+    text-decoration: none;
 }
